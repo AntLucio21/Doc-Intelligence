@@ -1,9 +1,9 @@
 export type DocumentStatus = 
-| "recebido" // chegou o arquivo no sistema, ainda não foi processado
-| "processando" // arquivo em processo de análise
-| "aguardando_revisao" // arquivo aguardando revisão
-| "processado" // arquivo processado com sucesso
-| "erro" // ocorreu um erro durante o processamento
+| "received" // chegou o arquivo no sistema, ainda não foi processado
+| "processing" //" // arquivo em processo de análise
+| "pending_review" // arquivo aguardando revisão
+| "processed" // " // arquivo processado com sucesso
+| "failed"; // um erro durante o processamento
 
 export interface ExtractedFields {
     [key: string]: string | number | null ; 
