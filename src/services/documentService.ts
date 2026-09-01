@@ -148,7 +148,7 @@ function mapRow(row: any): DocumentRecord | undefined {
   if (!row) return undefined;
   return {
     id: row.id,
-    originalFilename: row.original_Filename,
+    OriginalFilename: row.original_Filename,
     contentHash: row.content_hash,
     status: row.status,
     docType: row.doc_type,

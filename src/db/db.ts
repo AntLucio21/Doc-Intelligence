@@ -10,11 +10,13 @@ if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 const dbPath = path.join(dataDir, "doc-intelligence.sqlite3");
 export const db = new Database(dbPath);
 
+/*
 if (!fs.existsSync(dbPath)) {
   console.log(`Criando banco de dados em ${dbPath}`);
 } else {
   console.log(`Usando banco de dados existente em ${dbPath}`);
 }
+*/
 
 db.pragma("journal_mode = WAL"); // cofiguração do banco para permitir múltiplas leituras e uma escrita simultaneamente, melhorando a performance
 
