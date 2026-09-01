@@ -104,10 +104,11 @@ src/
     aiClient.ts            # dublê do classificador de IA de terceiro
   db/db.ts                 # conexão SQLite + schema
   types/document.ts        # tipos compartilhados
-tests/
-  documentService.test.ts  # testes da lógica de negócio
 docs/
   ARCHITECTURE.md           # ADRs — decisões, alternativas, o que não foi feito
+node_modules/               
+tests/
+  documentService.test.ts  # testes da lógica de negócio
 prompts/
   prompts.md                 # registro dos prompts usados com o agente de IA
 CLAUDE.md                    # instruções dadas ao agente de IA
